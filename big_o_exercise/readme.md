@@ -5,15 +5,25 @@
 Simplify the following big O expressions as much as possible:
 
 1. `O(n + 10)`
+On
 2. `O(100 * n)`
+O(n)
 3. `O(25)`
+O(1)
 4. `O(n^2 + n^3)`
+O(n^3)
 5. `O(n + n + n + n)`
+O(n)
 6. `O(1000 * log(n) + n)`
+O(log(n))
 7. `O(1000 * n * log(n) + n)`
+O(n*log(n))
 8. `O(2^n + n^2)`
+O(n^2)
 9. `O(5 + 3 + 1)`
+O(1)
 10. `O(n + n^(1/2) + n^2 + n * log(n)^10)`
+O(n*log(n))
 
 ### Part 2
 
@@ -29,6 +39,9 @@ function logUpTo(n) {
     }
 }
 
+// time: O(n)
+// space: O(1)
+
 // 2. 
 
 function logAtMost10(n) {
@@ -36,6 +49,8 @@ function logAtMost10(n) {
         console.log(i);
     }
 }
+// time: O(1)
+// space: O(1)
 
 // 3. 
 
@@ -44,6 +59,9 @@ function logAtLeast10(n) {
         console.log(i);
     }
 }
+
+// time: O(n)
+// space: O(1)
 
 // 4.
 
@@ -56,6 +74,9 @@ function onlyElementsAtEvenIndex(array) {
     }
     return newArray;
 }
+
+// time: O(log n)
+// space: O(n)
 
 // 5. 
 
@@ -70,4 +91,7 @@ function subtotals(array) {
     }
     return subtotalArray;
 }
+
+// time: O(n^2)
+// space: O(1)
 ```
